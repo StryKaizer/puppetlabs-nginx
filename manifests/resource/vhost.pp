@@ -91,6 +91,7 @@ define nginx::resource::vhost(
     proxy              => $proxy,
     try_files          => $try_files,
     www_root           => $www_root,
+    index_files        => $index_files,
     notify             => Class['nginx::service'],
   }
 
